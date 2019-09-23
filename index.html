@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style type="text/css">
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        position: relative;
+    }
+
+    #gameMap {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 800px;
+        height: 500px;
+        font-size: 0px;
+        background: #000000;
+    }
+
+    h1 {
+        width: 200px;
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 300px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        cursor: pointer;
+    }
+
+    h1:hover {
+        color: red;
+    }
+
+    h3 {
+        width: 300px;
+        color: white;
+        text-align: center;
+        position: absolute;
+        top: 350px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+
+    span {
+        display: inline-block;
+        /* box-sizing: border-box; */
+    }
+
+    .snake {
+        position: absolute;
+        background-color: red;
+        border-radius: 50%;
+    }
+
+    .food {
+        position: absolute;
+        background-color:blue;
+        border-radius: 50%;
+    }
+    #sum{
+        width:150px;
+        height: 50px;
+        background: gray;
+        position: absolute;
+        top: 580px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        text-align: center;
+        color: white;
+        line-height: 50px;
+        display: none;
+    }
+</style>
+<body>
+        <div id="gameMap"></div>
+        <h1>开始游戏</h1>
+        <audio id="Audio" loop="loop">
+            <source src="audio/贪吃蛇BGM.mp3">
+        </audio>
+        <h3>WSAD上下左右</h3>
+        <div id="sum">您的得分：0分</div>
+    <script src="javascript/index.js">
+    
+    </script>
+</body>
+</html>
